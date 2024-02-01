@@ -1,0 +1,374 @@
+:root{
+    --back-color:rgb(14,14,84);
+    --nav-color : rgb(96, 247, 96);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*header*/
+.container-header{
+    width: 100%;
+    height: 14vh;
+    background-color: var(--back-color);
+    display: flex;
+    padding: 10px;
+
+}
+
+.container-header img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10%;
+}
+
+.container-header header{
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+/*navigation bar*/
+.container-nav{
+    width: 100%;
+    height: 60px;
+    background-color: var(--nav-color);
+    display: flex;
+    padding: 10px;
+}
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: var(--back-color);
+  }
+
+  /*Carousel*/
+.carousel-div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+/*scripture*/
+.scripture{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--back-color);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 3px 5px rgb(98, 96, 96);
+   }
+   /*About*/
+   .container-about{
+    height: 110vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    box-shadow: 3px 3px 5px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+.container-about h2{
+    text-align: center;
+}
+.container-about ul{
+    list-style-type: disc;
+    padding: 10px;
+}
+/*Mission & Vision*/
+.container-mission-vision{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.mission, .vision{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: var(--back-color);
+    color: white;
+    box-shadow: 3px 5px 5px black;
+}
+
+.vision h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.mission h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/*
+Donate and images
+*/
+.donate-image{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+/* Images*/
+.container-image {
+    position: relative;
+    width: 50%;
+    margin-right: 50px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 90%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container-image:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container-image:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .text a{
+    color: white;
+  }
+  /* Video on why we should give*/
+    .giving-header{
+        position: relative;
+        width: 90%;
+        height: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+    }
+    .giving1{
+        position: absolute;
+        width: 90%;
+        bottom: 0;
+        right: 0;
+    }
+  /*Donate*/
+
+  div.polaroid {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin-right: 20px;
+  }
+  .polaroid h2{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+  }
+  .polaroid h3{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    margin-top: 10px;
+  }
+  
+  div.donate {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+   /*Our pictures*/
+   .pic-header{
+    margin-bottom: 60px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 800;
+  }
+  .polaroid h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.our-pictures{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas:
+    'item1 item2 item2'
+    'item4 item5 item6'
+    'item7 item8 item9' ;
+}
+/*Us*/
+  
+.container4{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    animation-name: container4;
+    animation-duration: 12s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes container4 {
+    0%   {background-color: white;}
+    20%  {background-color: rgb(230, 132, 132);}
+    40%  {background-color: rgb(234, 231, 154);}
+    60% {background-color: rgb(172, 237, 178);}
+    80% {background-color: rgb(174, 161, 226);}
+    100% {background-color: rgb(198, 123, 192);}
+  }
+.item{
+    margin-bottom: 10px;
+}
+.mail{
+    color: rgb(19, 19, 66);
+    margin-right: 15px;
+    font-size: 20px;
+}
+.face{
+    color: blue;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.insta{
+    margin-right: 10px;
+    background-image: linear-gradient( purple, yellow, red);
+    font-size: 20px;
+}
+.twit{
+    color: blue;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.mess{
+    margin-right: 10px;
+    background-image: linear-gradient( purple, yellow, red);
+    font-size: 20px;
+}
+/*Bottom arrow up*/
+.top{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid black;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--back-color);
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.top a{
+    color: white;
+    margin-right: 10px;
+}
+.top a:hover{
+    color: red;
+}
+.top i{
+    margin-top: 5px;
+    color: white;
+}
+@media screen and (min-width : 900px){
+    .container-header img{
+        margin-right: 20%;
+    }
+    .container-header header{
+        font-size: 30px;
+    }
+    .container-about{
+        height: 400px;
+    }
+    li a {
+        font-size: 20px;
+      }
+    .carousel-item img{
+        height: 550px;
+    }
+    .polaroid h2,h3{
+        font-size: 30px;
+    }
+    .item b{
+        font-size: 30px;
+    }
+    .giving1 iframe{
+        height: 500px;
+
+    }
+    .giving-header{
+        height: 600px;
+    }
+}
+.item6{
+    margin-top: 50px;
+    text-align: center;
+}
+@media screen and(max-width : 450px) {
+    .polaroid p{
+        font-size: medium;
+    }
+}
