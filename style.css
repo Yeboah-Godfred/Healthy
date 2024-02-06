@@ -337,10 +337,9 @@ Donate and images
 @media screen and (max-width : 640px) {
     ol{
         flex-wrap: wrap;
-
     }
     .container-nav{
-        height: 12vh;
+        height: 14vh;
     }
     .container-about{
         min-height: 140vh;
