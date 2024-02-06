@@ -26,13 +26,14 @@ body{
 .container-header img{
     width: 80px;
     height: 80px;
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
 
 .container-header header{
     margin-top: 15px;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 /*navigation bar*/
 .container-nav{
@@ -150,8 +151,8 @@ Donate and images
 /* Images*/
 .container-image {
     position: relative;
-    width: 50%;
-    margin-right: 50px;
+    width: 70%;
+    margin-right: 30px;
   }
   
   .image {
@@ -208,7 +209,6 @@ Donate and images
         right: 0;
     }
   /*Donate*/
-
   div.polaroid {
     position: relative;
     width: 90%;
@@ -333,6 +333,38 @@ Donate and images
     margin-top: 5px;
     color: white;
 }
+
+@media screen and (max-width : 640px) {
+    .container-about{
+        min-height: 140vh;
+    }
+    .polaroid h2{
+        font-size: 20px;
+    }
+    .polaroid h3{
+        font-size: 20px;
+    }
+    .polaroid p>h1{
+        font-size: 20px;
+    }
+    div.polaroid{
+        width: 100%;;
+    }
+    .our-pictures{
+     display: flex;
+     flex-wrap: wrap
+    }
+    .donate-image{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-image{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
 @media screen and (min-width : 900px){
     .container-header img{
         margin-right: 20%;
