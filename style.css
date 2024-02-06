@@ -50,7 +50,6 @@ ol {
     overflow: hidden;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
@@ -336,6 +335,13 @@ Donate and images
 }
 
 @media screen and (max-width : 640px) {
+    ol{
+        flex-wrap: wrap;
+
+    }
+    .container-nav{
+        height: 12vh;
+    }
     .container-about{
         min-height: 140vh;
     }
